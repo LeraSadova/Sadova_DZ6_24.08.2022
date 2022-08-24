@@ -3,8 +3,7 @@
 // такой длины.
 // Теорема о неравенстве треугольника: каждая сторона треугольника
 // меньше суммы двух других сторон.
-
-
+Console.Clear();
 Console.WriteLine("Введите три натуральных числа");
 
 int num1 = int.Parse(Console.ReadLine());
@@ -16,7 +15,7 @@ bool TriangleCheck(int number1, int number2, int number3)
     int max = number1;
     if (number2 > max) max = number2;
     if (number3 > max) max = number3;
-
+    //проверяем сумму сторон минус максимальная сторона. 
     return (number1 + number2 + number3 - max) > max;
 }
 
